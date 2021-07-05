@@ -31,6 +31,7 @@ $(document).ready(function(event) {
   $("#number-beeper").submit(function(event) {
     const userNumber = parseInt($("#user-number").val());
     const outputArray = processNumber(userNumber);
+    console.log(userNumber);
     if (validateNumber(userNumber)) { 
       $("#result-section").show();
       $("#user-output").text(outputArray.join(", "));
