@@ -6,6 +6,13 @@ Describe: processNumber(userNumber)
 Test: "It should increment from 0 to the user number"
 Expect(processNumber(userNumber) === [0,... userNumber]);
 
+Describe: processNumber(userNumber)
+Test: "It should replace a number containing 3 with 'Won't you be my neighbor?'"
+Expect(processNumber(5) === [0, 1, 2, Won't you be my neighbor?, 4, 5]);
+
+Describe: processNumber(userNumber)
+Test: "It should replace a number containing 2 with 'Boop'"
+Expect(processNumber(5) === [0, 1, Boop, Won't you be my neighbor?, 4, 5]);
 
 # _Homework-3_
 
