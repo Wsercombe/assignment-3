@@ -1,6 +1,15 @@
-# _Homework-2_
+Describe: processNumber(userNumber)
+Test: "It should return an array with a 0 if the number 0 is inputted"
+Expect(processNumber(0).toEqual([0]);
 
-#### _This application quizzes the user to determine their preferred programing language_
+Describe: processNumber(userNumber)
+Test: "It should increment from 0 to the user number"
+Expect(processNumber(userNumber) === [0,... userNumber]);
+
+
+# _Homework-3_
+
+#### _This application takes a user number and outputs varying messages as it increments from 0 to the user number_
 
 #### By _**William Sercombe**_
 
@@ -14,16 +23,21 @@
 
 ## Description
 
-*_The user answers multiple choice questions and the program has scores for each programming language, the language with the highest score is returned_
+* _The user enters a number into the page form, the program will increment from 0 to the user's number and display a message in a comma separated list_
+* _Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"_
+* _Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"_
+* _Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"_
 
 ## Setup/Installation Requirements
 
-* _The user should have access to the Github repository_
-* _The user should be able to clone the repository and view the application on a web browser_
+* _Navigate to the gitub page to find the application_
+* _Clone the application from the github address to their local computer_
+* _Open the html application with a supported web browser (Chrome, FireFox, Edge, among those supported)_
+
 
 ## Known Bugs
 
-* _I have no logic for when there is a tie_
+* _N/A_
 
 ## License
 
