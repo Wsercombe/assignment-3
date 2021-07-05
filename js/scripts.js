@@ -5,12 +5,10 @@ function processNumber(userNumber){
     userNumberString = i.toString();
     if (userNumberString.includes("3")){
       outputArray.push("Won't you be my neighbor?");
-    /*
     } else if (userNumberString.includes("2")) {
-      outputArray.push("Boop");
+      outputArray.push("Boop!");
     } else if (userNumberString.includes("1")) {
-      outputArray.push("Beep");
-    */
+      outputArray.push("Beep!");
     } else {
       outputArray.push(i);
     }
