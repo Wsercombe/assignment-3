@@ -46,10 +46,13 @@ $(document).ready(function(event) {
           $("#user-output").append(outputArray[t] + ", ");
         } else {
           $("#user-output").append(outputArray[t]);
+          $("#rogers").fadeIn("slow");
         }
         t += 1;
       },500);
     }
+
+
     event.preventDefault();
   });
 });
