@@ -11,8 +11,17 @@ Test: "It should replace a number containing 3 with 'Won't you be my neighbor?'"
 Expect(processNumber(5) === [0, 1, 2, Won't you be my neighbor?, 4, 5]);
 
 Describe: processNumber(userNumber)
-Test: "It should replace a number containing 2 with 'Boop'"
-Expect(processNumber(5) === [0, 1, Boop, Won't you be my neighbor?, 4, 5]);
+Test: "It should replace a number containing 2 with 'Boop!'"
+Expect(processNumber(5) === [0, 1, Boop!, Won't you be my neighbor?, 4, 5]);
+
+Describe: processNumber(userNumber)
+Test: "It should replace a number containing 1 with 'Beep!'"
+Expect(processNumber(5) === [0, Beep!, Boop!, Won't you be my neighbor?, 4, 5]);
+
+Describe: validateNumber(userNumber)
+Test: "It should return true if it is between 0 and 100 and return false if it is not"
+Expect(validateNumber("string") === false );
+
 
 # _Homework-3_
 
