@@ -26,17 +26,29 @@ function validateNumber(userNumber) {
     return false;
   }
 }
-
-
+function resetCSS()
+{
+  $("#user-output").empty();
+}
 
 $(document).ready(function(event) {
   $("#number-beeper").submit(function(event) {
+    resetCSS();
+
     const userNumber = parseInt($("#user-number").val());
     if (validateNumber(userNumber)) { 
       const outputArray = processNumber(userNumber);
       $("#result-section").show();
-      $("#user-output").text(outputArray.join(", "));
-
+      let t = 0;
+      arraySize = outputArray.length;
+      setInterval(function () {
+        if (t < arraySize - 1) {
+          $("#user-output").append(outputArray[t] + ", ");
+        } else {
+          $("#user-output").append(outputArray[t]);
+        }
+        t += 1;
+      },500);
     }
     event.preventDefault();
   });
