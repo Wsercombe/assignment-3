@@ -35,3 +35,9 @@ body
   padding: 20px;
   background-color: lightgray;
 }
+
+.invalid-text {
+  color: red;
+  display: none;
+  margin-top: 20px;
+}

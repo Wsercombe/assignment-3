@@ -18,9 +18,11 @@ function processNumber(userNumber){
 
 function validateNumber(userNumber) {
   if (Number.isInteger(userNumber) && userNumber >= 0 && userNumber <= 100) {
+    $(".invalid-text").hide();
     return true;
   } else {
-    alert("Enter a number between 0 and 100");
+    $(".invalid-text").show();
+    $("#result-section").hide();
     return false;
   }
 }
@@ -30,12 +32,12 @@ function validateNumber(userNumber) {
 $(document).ready(function(event) {
   $("#number-beeper").submit(function(event) {
     const userNumber = parseInt($("#user-number").val());
-    const outputArray = processNumber(userNumber);
-    console.log(userNumber);
     if (validateNumber(userNumber)) { 
+      const outputArray = processNumber(userNumber);
       $("#result-section").show();
       $("#user-output").text(outputArray.join(", "));
-      event.preventDefault();
+
     }
+    event.preventDefault();
   });
 });

@@ -19,7 +19,7 @@ Test: "It should replace a number containing 1 with 'Beep!'"
 Expect(processNumber(5) === [0, Beep!, Boop!, Won't you be my neighbor?, 4, 5]);
 
 Describe: validateNumber(userNumber)
-Test: "It should return true if it is between 0 and 100 and return false if it is not"
+Test: "It should return true if it is an integer between 0 and 100 and return false if it is not"
 Expect(validateNumber("string") === false );
 
 
